@@ -1,0 +1,1 @@
+# fetch the details form two yamls and create the dictionary
