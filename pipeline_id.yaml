@@ -1,0 +1,11 @@
+# this is also a sample yaml. you can define your template
+
+resources:
+- resourceType: storage-account
+  pipelineId: '124'
+
+- resourceType: aks
+  pipelineId: '124'
+
+- resourceType: acr
+  pipelineId: '12414'

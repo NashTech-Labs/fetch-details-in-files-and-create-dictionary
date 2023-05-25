@@ -1,0 +1,24 @@
+# sample template you can define your also
+
+all-resource:
+- name: aks-cluster-01
+  type: aks
+  config:
+    cluster_name: "dummy-aks-ems"
+    resource_group_name: "EMS-POC"
+    kubernetes_version: '1.25.5'
+    location: "westus"
+    enable_auto_scaling: "false"
+    private_cluster_enabled: "true"
+    vnet_name: "ems-vnet-poc"
+    node_pool:
+      name: "firstnode"
+      node_count: 1 #10
+      type: VirtualMachineScaleSets
+
+- name: test-acr
+  type: acr
+  config:
+    resource_group_name: "sample-RG"
+    resource_location:  "<location>"
+  
